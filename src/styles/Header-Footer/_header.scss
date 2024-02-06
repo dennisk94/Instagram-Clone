@@ -1,0 +1,33 @@
+@use '../Variables/variables.scss' as *;
+
+.header {
+    background-color: $header-footer-bkgd;
+    padding: 10px 15px;
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: $max1200;
+
+        a {
+            text-decoration: none;
+        }
+        .app-heading {
+            color: #fff;
+            &:hover {
+                color: $nav-link-hover;
+            }
+        }
+        .navigation {
+            a {
+                color: $wht;
+                text-decoration: none;
+                font-size: $nav-link;
+                font-weight: $fw-500;
+                &:hover {
+                    color: $nav-link-hover;
+                }
+            }
+        }
+    }
+}
